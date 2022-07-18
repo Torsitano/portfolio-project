@@ -2,12 +2,14 @@
     "compilerOptions": {
         "allowUnreachableCode": false,
         "esModuleInterop": true,
-        "target": "ES2021",
-        "module": "commonjs",
+        "target": "ES5",
+        "module": "ESNext",
         "lib": [
-            "es2021",
-            "DOM"
+            "dom",
+            "dom.iterable",
+            "esnext"
         ],
+        "moduleResolution": "node",
         "resolveJsonModule": true,
         "noEmitOnError": true,
         "declaration": true,
@@ -28,7 +30,8 @@
         "outDir": "./dist",
         "typeRoots": [
             "./node_modules/@types"
-        ]
+        ],
+        "jsx": "react-jsx"
     },
     "include": [
         "src"
